@@ -8,6 +8,15 @@ export default async function App() {
     const storedInfo = JSON.parse(await AsyncStorage.getItem("userInfo")) as UserInfo;
     const userInfo = storedInfo ? defaultInfo : storedInfo;
     return (
-        <Landing userInfo={userInfo}/>
+        <>
+            <head>
+                <title>The Social Helper</title>
+                <link rel="preconnect" href="https://fonts.googleapis.com" />
+                <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin={"anonymous"}/>
+                <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet"/>
+            </head>
+            <Landing userInfo={userInfo}/>
+        </>
+        
     );
 }
