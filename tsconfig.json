@@ -3,7 +3,8 @@
     "paths": {
       "@Components/*": ["./src/Components/*"],
       "@Pages/*": ["./src/Pages/*"],
-      "@Landing/*": ["./src/Startup/Landing/*"]
+      "@Landing/*": ["./src/Startup/Landing/*"],
+      "@Styles/*": ["./src/Styles/*"]
     }
   },
   "extends": "expo/tsconfig.base",
