@@ -1,10 +1,8 @@
-import { StatusBar } from 'expo-status-bar';
 import { Landing } from "@Landing/Landing";
 import { UserInfo } from "@Landing/types";
 import { defaultInfo } from "./src/Data/userInfo";
 import AsyncStorage from "@react-native-async-storage/async-storage/lib/typescript/AsyncStorage.native";
-import { library } from "@fortawesome/fontawesome-svg-core";
-import { ChakraProvider, extendTheme } from "@chakra-ui/react";
+import { ChakraProvider } from "@chakra-ui/react";
 
 export default async function App() {
     const storedInfo = JSON.parse(await AsyncStorage.getItem("userInfo")) as UserInfo;

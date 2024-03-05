@@ -1,5 +1,5 @@
 import { OnboardingItem, OnboardingItemProps } from "./OnboardingItem/OnboardingItem";
-import { FC, useEffect, useState } from "react";
+import { FC, useState } from "react";
 
 export interface OnboardingItemGroupProps {
     innerProps: OnboardingItemProps[]

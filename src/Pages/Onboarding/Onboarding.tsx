@@ -1,4 +1,3 @@
-import { OnboardingItemGroup } from "@Pages/Onboarding/OnboardingItemGroup/OnboardingItemGroup";
 import { useState } from "react";
 import { Page0 } from "@Pages/Onboarding/OnboardingItemGroup/Pages/Page0";
 import { Page1 } from "@Pages/Onboarding/OnboardingItemGroup/Pages/Page1";

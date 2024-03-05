@@ -1,7 +1,5 @@
 import { FC, useState } from "react";
-import { IconProp } from "@fortawesome/fontawesome-svg-core";
 import { HStack, Icon, VStack, Text } from "@chakra-ui/react";
-import { BsBriefcaseFill } from "react-icons/bs";
 import { IconType } from "react-icons";
 
 export interface OnboardingItemProps {

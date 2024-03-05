@@ -1,7 +1,7 @@
 import { OnboardingItemGroup } from "@Pages/Onboarding/OnboardingItemGroup/OnboardingItemGroup";
 import { OnboardingItemProps } from "@Pages/Onboarding/OnboardingItemGroup/OnboardingItem/OnboardingItem";
 import { BsBriefcaseFill, BsFillPeopleFill, BsQuestion } from "react-icons/bs";
-import { FC, useState } from "react";
+import { FC } from "react";
 import { Text, VStack } from "@chakra-ui/react";
 
 const item1: OnboardingItemProps = {
