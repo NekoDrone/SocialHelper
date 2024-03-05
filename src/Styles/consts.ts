@@ -1,0 +1,11 @@
+export enum colors {
+    WHITE = "#FFFFFF",
+    YELLOW_50 = "#FFFFF0",
+    YELLOW_100 = "#FEFCBF",
+    YELLOW_200 = "#FAF089",
+    YELLOW_300 = "#F6E05E",
+    YELLOW_400 = "#ECC94B",
+    PLACEHOLDER_RED = "#ED8463",
+    PLACEHOLDER_BLUE = "#63B3ED",
+    PLACEHOLDER_GREEN = "#81DE96",
+}
