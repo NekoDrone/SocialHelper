@@ -8,4 +8,6 @@ export enum colors {
     PLACEHOLDER_RED = "#ED8463",
     PLACEHOLDER_BLUE = "#63B3ED",
     PLACEHOLDER_GREEN = "#81DE96",
+    ICON_GREY = "#424242",
+    ICON_LIGHT_GREY = "#7D7D7D",
 }
