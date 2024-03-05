@@ -1,20 +1,13 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { Landing } from "@Landing/Landing";
+import { UserInfo } from "@Landing/types";
+import { defaultInfo } from "./src/Data/userInfo";
+import AsyncStorage from "@react-native-async-storage/async-storage/lib/typescript/AsyncStorage.native";
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Welcome to the Social Helper</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
+export default async function App() {
+    const storedInfo = JSON.parse(await AsyncStorage.getItem("userInfo")) as UserInfo;
+    const userInfo = storedInfo ? defaultInfo : storedInfo;
+    return (
+        <Landing userInfo={userInfo}/>
+    );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
